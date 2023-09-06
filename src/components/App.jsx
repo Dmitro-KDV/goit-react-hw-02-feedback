@@ -1,5 +1,4 @@
 import {Section} from 'components/Feedback/Section'
-import {Phonebook} from 'components/Phonebook/Phonebook'
 import { Component } from 'react'
 
 export class App extends Component {
@@ -40,7 +39,6 @@ export class App extends Component {
       return (
           <div>
               <Section title="Please leave feedback" objectThis={this} object={object}/>
-              <Phonebook />
           </div>
       );
   }
