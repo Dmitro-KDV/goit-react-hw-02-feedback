@@ -26,6 +26,7 @@ export class App extends Component {
     const total = good + neutral + bad;
     const positivePercentage = Math.round((good / total) * 100);
     let isShowStatistics = false;
+    
     if (total>0) {
       isShowStatistics = true;
     } 
