@@ -21,24 +21,25 @@ export class App extends Component {
           bad: prev.bad + 1,
       }));   
 
+
   render() {
     const { good, neutral, bad } = this.state;
-    const object = {
+    const options = {
         good: good,
         neutral: neutral,
         bad: bad,
         total: 0,
-        positive: 0,
+        positivePercentage: 0,
         isShowStatistics: false,
     }
 
-    object.total  = object.good + object.neutral + object.bad;
-    object.positive = Math.round(((object.good) / (object.total)) * 100);
-    object.total > 0 ? object.isShowStatistics = true : object.isShowStatistics = false;
+    options.total = options.good + options.neutral + options.bad;    
+    options.positivePercentage = Math.round(((options.good) / (options.total)) * 100);
+    options.total > 0 ? options.isShowStatistics = true : options.isShowStatistics = false;
 
       return (
           <div>
-              <Section title="Please leave feedback" objectThis={this} object={object}/>
+              <Section title="Please leave feedback" onLeaveFeedback={this} options={options}/>
           </div>
       );
   }

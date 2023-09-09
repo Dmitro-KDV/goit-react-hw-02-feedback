@@ -1,5 +1,7 @@
 
 export const Statistics = ({stats}) => {
+
+
     return ( 
         <div>
             <h3>Statistics</h3>
@@ -7,7 +9,7 @@ export const Statistics = ({stats}) => {
             <p>Neutral: <span>{stats.neutral}</span></p>
             <p>Bad: <span>{stats.bad}</span></p>
             <p>Total: <span>{stats.total}</span></p>
-            <p>Positive feedback: <span>{stats.positive} %</span></p>
+            <p>Positive feedback: <span>{stats.positivePercentage} %</span></p>
         </div>
     );
 }
