@@ -24,6 +24,10 @@ export class App extends Component {
       bad: prev.bad + 1,
     }));
 
+  handleClick = (option) => {
+      console.log(option)
+  }
+
 
   render() {
     const { good, neutral, bad } = this.state;
@@ -44,6 +48,8 @@ export class App extends Component {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions 
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.handleClick}
                   // ClickGood = {this.handleClickGood}
                   // ClickNeutral = {this.handleClickNeutral}
                   // ClickBad = {this.handleClickBad}
