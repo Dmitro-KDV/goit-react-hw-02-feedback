@@ -1,7 +1,7 @@
 import { Section } from 'components/Feedback/Section';
-import {Statistics} from 'components/Feedback/Statistics'
-import {FeedbackOptions} from 'components/Feedback/FeedbackOptions'
-import {Notification} from 'components/Feedback/Notification'
+import {Statistics} from 'components/Feedback/Statistics';
+import {FeedbackOptions} from 'components/Feedback/FeedbackOptions';
+import {Notification} from 'components/Feedback/Notification';
 import { Component } from 'react';
 
 export class App extends Component {
